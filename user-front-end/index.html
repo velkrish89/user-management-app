@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Management System</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>User Management System</h1>
+        </header>
+        <div class="container-body">
+            <div class="title-bar">
+                <h2>List of Users</h2>
+                <a>
+                    <button id="get-users">Get Users</button>
+                </a>
+                <a>
+                    <button id="add-user">Add User</button>
+                </a>
+            </div>
+            <div class="comments">
+                <span>
+                    Click "Get Users" to view the list of users
+                </span>
+                <span>
+                    Click "Add" to add new user
+                </span>
+            </div>
+            <table class="user-table">
+                <thead class="table-header">
+                    <th>User Id</th>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Phone</th>
+                    <th>Actions</th>
+                </thead>
+                <tbody id="table-body">
+                    
+                </tbody>
+            </table>
+        </div>
+        <div class="main-div">
+            <div class="input-body">
+                <form id="userForm" action="index.html" method="post">
+                    <h3>Add User</h3>
+                    <div class="input">
+                        <label for="userId" class="text-label">User Id</label>
+                        <input type="text" name="userId" id="userId" required>
+                    </div>
+                    <div class="input">
+                        <label for="name" class="text-label">Name</label>
+                        <input type="text" name="name" id="name" required>
+                    </div>
+                    <div class="input">
+                        <label for="email" class="text-label">Email</label>
+                        <input type="email" name="email" id="email" required>
+                    </div>
+                    <div class="input">
+                        <label for="phone" class="text-label">Phone</label>
+                        <input type="text" name="phone" id="phone" required>
+                    </div>
+                    <div class="submit-btns">
+                        <button type="submit" id="submit">Add</button>
+                        <button type="reset" id="reset">Reset</button>
+                        <a href="index.html">
+                            <button type="button" id="cancel">Cancel</button>
+                        </a>
+                        
+                    </div>
+                    <div class="success-msg">
+                        <h3>User added successfully!!!</h3>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="index.js"></script>
+
+</body>
+</html>

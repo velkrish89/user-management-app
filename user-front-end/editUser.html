@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add User</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>User Management System</h1>
+        </header>
+        <div class="input-body">
+            <form id="userForm" action="index.html" method="post">
+                <h3>Edit User</h3>
+                <div class="input">
+                    <label for="name" class="text-label">Name</label>
+                    <input type="text" name="name" id="name" required>
+                </div>
+                <div class="input">
+                    <label for="email" class="text-label">Email</label>
+                    <input type="email" name="email" id="email" required>
+                </div>
+                <div class="input">
+                    <label for="phone" class="text-label">Phone</label>
+                    <input type="text" name="phone" id="phone" required>
+                </div>
+                <div class="submit-btns">
+                    <button type="submit" id="submit">Save</button>
+                    <button type="reset" id="reset">Reset</button>
+                    <a href="index.html">
+                        <button type="button" id="cancel">Cancel</button>
+                    </a>
+                    
+                </div>
+                <div class="success-msg">
+                    <h3>User added successfully!!!</h3>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script type="text/javascript" src="editUser.js"></script>
+</body>
+</html>
